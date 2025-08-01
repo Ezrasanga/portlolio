@@ -1,0 +1,788 @@
+<!DOCTYPE html>
+<html lang="en">
+    <head>
+        <meta charset="UTF-8" />
+        <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+        <title>Ezra Kiplimo - Professional Writer</title>
+        <script src="https://cdn.tailwindcss.com"></script>
+        <script src="https://cdn.jsdelivr.net/npm/typed.js@2.0.12"></script>
+
+        <!-- External JavaScript File -->
+        <script src="script.js"></script>
+        
+        <link rel="shortcut icon" href="about-img.png" type="image/x-icon">
+        <link rel="stylesheet" href="styles.css" />
+        <link rel="preconnect" href="https://fonts.googleapis.com" />
+        <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+        <link
+            href="https://fonts.googleapis.com/css2?family=Inter:wght@400;500;600&family=Poppins:wght@500;600;700&display=swap"
+            rel="stylesheet"
+        />
+        <link
+            href="https://cdn.jsdelivr.net/npm/remixicon@4.5.0/fonts/remixicon.css"
+            rel="stylesheet"
+        />
+        <link href="#projects.html" rel="projects" />
+
+        <script>
+            tailwind.config={theme:{extend:{colors:{primary:'#23163F',secondary:'#57B5E7'},borderRadius:{'none':'0px','sm':'4px',DEFAULT:'8px','md':'12px','lg':'16px','xl':'20px','2xl':'24px','3xl':'32px','full':'9999px','button':'8px'}}}}
+        </script>
+        <style>
+            :where([class^="ri-"])::before {
+                content: "\f3c2";
+            }
+            body {
+                font-family: "Inter", sans-serif;
+            }
+            h1,
+            h2,
+            h3,
+            h4,
+            h5,
+            h6 {
+                font-family: "Poppins", sans-serif;
+            }
+        </style>
+    </head>
+    <body class="bg-gray-900 text-gray-100 dark">
+        <nav
+            class="fixed top-0 w-full bg-gray-900/95 backdrop-blur-sm z-50 border-b border-gray-800"
+        >
+            <div class="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
+                <div class="flex justify-between h-16">
+                    <div class="flex items-center">
+                        <span class="text-2xl font-['Pacifico']">
+                            Ezra Kiplimo </span
+                        >
+                    </div>
+                    <div class="hidden md:flex items-center space-x-8">
+                        <a
+                            href="#home"
+                            class="text-gray-300 hover:text-secondary cursor-pointer"
+                            >Home</a
+                        >
+                        <a
+                            href="#skills"
+                            class="text-gray-300 hover:text-secondary cursor-pointer"
+                            >Skills</a
+                        >
+                        <a
+                            href="#experience"
+                            class="text-gray-300 hover:text-secondary cursor-pointer"
+                            >Experience</a
+                        >
+                        <a
+                            href="projects.html"
+                            class="text-gray-300 hover:text-secondary cursor-pointer"
+                        >
+                            Projects
+                        </a>
+                        <a
+                            href="#contact"
+                            class="text-gray-300 hover:text-secondary cursor-pointer"
+                            >Contact</a
+                        >
+                        <button
+                            class="bg-secondary text-white px-6 py-2 !rounded-button hover:bg-secondary/90 cursor-pointer whitespace-nowrap"
+                        >
+                            <a
+                                href="https://drive.google.com/uc?export=download&id=1btRsnGu19k8OUP7kWsZ5dmoP4r0BntLH"
+                                download="Ezra_Kiplimo_Resume.pdf"
+                                class="bg-secondary text-white px-6 py-2 rounded-button hover:bg-secondary/90 cursor-pointer whitespace-nowrap"
+                            >
+                                Download CV
+                            </a>
+                        </button>
+                    </div>
+                </div>
+            </div>
+        </nav>
+        <section id="home" class="relative min-h-screen pt-16 overflow-hidden">
+            <div class="absolute inset-0 z-0">
+                <img
+                    src="https://public.readdy.ai/ai/img_res/c6ef62b16baff316de9ceed269f07181.jpg"
+                    class="w-full h-full object-cover object-top opacity-20"
+                    alt="Hero Background"
+                />
+            </div>
+            <div
+                class="relative z-10 max-w-7xl mx-auto px-4 sm:px-6 lg:px-8 pt-32"
+            >
+                <div
+                    class="grid grid-cols-1 lg:grid-cols-2 gap-12 items-center"
+                >
+                    <div>
+                        <h1 class="text-5xl font-bold mb-6">Ezra Kiplimo</h1>
+                        <!--<h2 class="text-3xl text-gray-300 mb-6">Professional Content Writer & Storyteller</h2>-->
+
+                        <h2 class="text-3xl text-gray-300 mb-6">
+                            <span id="typed-text"
+                                >Professional Content Writer & Storyteller</span
+                            >
+                        </h2>
+
+                        <p class="text-lg text-gray-400 mb-8">
+                            Crafting compelling narratives and engaging content
+                            that connects brands with their audience. With over
+                            8 years of experience in digital storytelling, SEO
+                            optimization, and content strategy.
+                        </p>
+                        <div class="flex space-x-4">
+                            <a
+                                 href="projects.html"
+                                data-readdy="true"
+                                class="bg-secondary text-white px-8 py-3 !rounded-button hover:bg-secondary/90 cursor-pointer whitespace-nowrap"
+                            >
+                                View Projects
+                            </a>
+                            <button
+                                onclick="scrollToContact()"
+                                class="border border-secondary text-secondary px-8 py-3 !rounded-button hover:bg-secondary/5 cursor-pointer whitespace-nowrap"
+                            >
+                                Contact Me
+                            </button>
+                        </div>
+                    </div>
+                    <div class="relative">
+                        <img
+                            src="src/about-img.png"
+                            class="w-full rounded-2xl shadow-xl"
+                            alt="Ezra Kiplimo"
+                        />
+                    </div>
+                </div>
+            </div>
+        </section>
+        <section id="skills" class="py-24 bg-gray-800">
+            <div class="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
+                <h2 class="text-4xl font-bold text-center mb-16">
+                    My Expertise
+                </h2>
+                <div
+                    class="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-4 gap-8"
+                >
+                    <div
+                        class="bg-gray-900 p-8 rounded-xl shadow-sm hover:shadow-md transition-all transform hover:-translate-y-1"
+                    >
+                        <div
+                            class="w-12 h-12 flex items-center justify-center bg-secondary/10 rounded-lg mb-6"
+                        >
+                            <i
+                                class="ri-article-line text-secondary text-2xl"
+                            ></i>
+                        </div>
+                        <h3 class="text-xl font-semibold mb-4">
+                            Content Writing & Blogging
+                        </h3>
+                        <p class="text-gray-400">
+                            SEO-optimized, well-structured, and engaging
+                            content.
+                        </p>
+                    </div>
+                    <div
+                        class="bg-gray-900 p-8 rounded-xl shadow-sm hover:shadow-md transition-all transform hover:-translate-y-1"
+                    >
+                        <div
+                            class="w-12 h-12 flex items-center justify-center bg-secondary/10 rounded-lg mb-6"
+                        >
+                            <i
+                                class="ri-advertisement-line text-secondary text-2xl"
+                            ></i>
+                        </div>
+                        <h3 class="text-xl font-semibold mb-4">
+                            Copywriting & Marketing
+                        </h3>
+                        <p class="text-gray-400">
+                            Ad copy, sales pages, and brand storytelling.
+                        </p>
+                    </div>
+                    <div
+                        class="bg-gray-900 p-8 rounded-xl shadow-sm hover:shadow-md transition-all transform hover:-translate-y-1"
+                    >
+                        <div
+                            class="w-12 h-12 flex items-center justify-center bg-secondary/10 rounded-lg mb-6"
+                        >
+                            <i
+                                class="ri-file-text-line text-secondary text-2xl"
+                            ></i>
+                        </div>
+                        <h3 class="text-xl font-semibold mb-4">
+                            Technical Writing
+                        </h3>
+                        <p class="text-gray-400">
+                            Manuals, how-to guides, and whitepapers.
+                        </p>
+                    </div>
+                    <div
+                        class="bg-gray-900 p-8 rounded-xl shadow-sm hover:shadow-md transition-all transform hover:-translate-y-1"
+                    >
+                        <div
+                            class="w-12 h-12 flex items-center justify-center bg-secondary/10 rounded-lg mb-6"
+                        >
+                            <i
+                                class="ri-quill-pen-line text-secondary text-2xl"
+                            ></i>
+                        </div>
+                        <h3 class="text-xl font-semibold mb-4">
+                            Creative Writing
+                        </h3>
+                        <p class="text-gray-400">
+                            Fiction, poetry, and screenplay writing.
+                        </p>
+                    </div>
+                    <div
+                        class="bg-gray-900 p-8 rounded-xl shadow-sm hover:shadow-md transition-all transform hover:-translate-y-1"
+                    >
+                        <div
+                            class="w-12 h-12 flex items-center justify-center bg-secondary/10 rounded-lg mb-6"
+                        >
+                            <i
+                                class="ri-ghost-line text-secondary text-2xl"
+                            ></i>
+                        </div>
+                        <h3 class="text-xl font-semibold mb-4">Ghostwriting</h3>
+                        <p class="text-gray-400">
+                            Books, speeches, and personal branding content.
+                        </p>
+                    </div>
+                    <div
+                        class="bg-gray-900 p-8 rounded-xl shadow-sm hover:shadow-md transition-all transform hover:-translate-y-1"
+                    >
+                        <div
+                            class="w-12 h-12 flex items-center justify-center bg-secondary/10 rounded-lg mb-6"
+                        >
+                            <i
+                                class="ri-search-line text-secondary text-2xl"
+                            ></i>
+                        </div>
+                        <h3 class="text-xl font-semibold mb-4">
+                            SEO & Digital Marketing
+                        </h3>
+                        <p class="text-gray-400">
+                            Keyword research, content strategy, and
+                            optimization.
+                        </p>
+                    </div>
+                    <div
+                        class="bg-gray-900 p-8 rounded-xl shadow-sm hover:shadow-md transition-all transform hover:-translate-y-1"
+                    >
+                        <div
+                            class="w-12 h-12 flex items-center justify-center bg-secondary/10 rounded-lg mb-6"
+                        >
+                            <i
+                                class="ri-edit-2-line text-secondary text-2xl"
+                            ></i>
+                        </div>
+                        <h3 class="text-xl font-semibold mb-4">
+                            Editing & Proofreading
+                        </h3>
+                        <p class="text-gray-400">
+                            Grammar, structure, clarity, and tone enhancement.
+                        </p>
+                    </div>
+                </div>
+            </div>
+        </section>
+        <section id="experience" class="py-24">
+            <div class="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
+                <h2 class="text-4xl font-bold text-center mb-16">
+                    Recent Work History
+                </h2>
+                <div class="grid grid-cols-1 md:grid-cols-2 gap-8">
+                    <div
+                        class="bg-gray-900 p-8 rounded-xl hover:shadow-lg transition-all"
+                    >
+                        <div class="flex items-center mb-6">
+                            <img
+                                src="https://public.readdy.ai/ai/img_res/46fca16ffa0b315089cf0e2cd56654e4.jpg"
+                                class="w-16 h-16 rounded-lg object-cover mr-4"
+                                alt="Digital Creators Ltd Logo"
+                            />
+                            <div>
+                                <h3 class="text-xl font-semibold">
+                                    Content Lead
+                                </h3>
+                                <p class="text-secondary">
+                                    Digital Creators Ltd
+                                </p>
+                                <p class="text-gray-400">2023 - Present</p>
+                            </div>
+                        </div>
+                        <p class="text-gray-400">
+                            Leading content strategy and team management for
+                            enterprise clients. Specializing in digital content
+                            creation and optimization.
+                        </p>
+                    </div>
+                    <div
+                        class="bg-gray-900 p-8 rounded-xl hover:shadow-lg transition-all"
+                    >
+                        <div class="flex items-center mb-6">
+                            <img
+                                src="https://public.readdy.ai/ai/img_res/ebebe4d2bdd4a1ea231eeec322c9a3c8.jpg"
+                                class="w-16 h-16 rounded-lg object-cover mr-4"
+                                alt="Freelance Logo"
+                            />
+                            <div>
+                                <h3 class="text-xl font-semibold">
+                                    Freelance Writer
+                                </h3>
+                                <p class="text-secondary">Global Brands</p>
+                                <p class="text-gray-400">2021 - 2023</p>
+                            </div>
+                        </div>
+                        <p class="text-gray-400">
+                            Providing high-quality content writing services for
+                            various international brands and businesses.
+                        </p>
+                    </div>
+                    <div
+                        class="bg-gray-900 p-8 rounded-xl hover:shadow-lg transition-all"
+                    >
+                        <div class="flex items-center mb-6">
+                            <img
+                                src="https://public.readdy.ai/ai/img_res/443edea0d8948ae2e9920f2d45d27ebc.jpg"
+                                class="w-16 h-16 rounded-lg object-cover mr-4"
+                                alt="X-Tech Solutions Logo"
+                            />
+                            <div>
+                                <h3 class="text-xl font-semibold">
+                                    Technical Writing Specialist
+                                </h3>
+                                <p class="text-secondary">X-Tech Solutions</p>
+                                <p class="text-gray-400">2019 - 2021</p>
+                            </div>
+                        </div>
+                        <p class="text-gray-400">
+                            Specialized in technical documentation and business
+                            writing for software and technology companies.
+                        </p>
+                    </div>
+                    <div
+                        class="bg-gray-900 p-8 rounded-xl hover:shadow-lg transition-all"
+                    >
+                        <div class="flex items-center mb-6">
+                            <img
+                                src="https://public.readdy.ai/ai/img_res/73679ec0b93cde264e36cf2e287212ff.jpg"
+                                class="w-16 h-16 rounded-lg object-cover mr-4"
+                                alt="Market Insight Agency Logo"
+                            />
+                            <div>
+                                <h3 class="text-xl font-semibold">
+                                    SEO Copywriter
+                                </h3>
+                                <p class="text-secondary">
+                                    Market Insight Agency
+                                </p>
+                                <p class="text-gray-400">2017 - 2019</p>
+                            </div>
+                        </div>
+                        <p class="text-gray-400">
+                            Created SEO-optimized content and implemented
+                            digital marketing strategies for diverse clients.
+                        </p>
+                    </div>
+                </div>
+            </div>
+        </section>
+        <section id="projects" class="py-24 bg-gray-800">
+            <div class="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
+                <h2 class="text-4xl font-bold text-center mb-16">
+                    Featured Projects
+                </h2>
+                <div
+                    class="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-3 gap-8"
+                >
+                    <div
+                        class="bg-gray-900 rounded-xl overflow-hidden shadow-sm hover:shadow-md transition-shadow"
+                    >
+                        <img
+                            src="https://public.readdy.ai/ai/img_res/b076f684c99add473f9a010b88d64742.jpg"
+                            class="w-full h-48 object-cover"
+                            alt="Project 1"
+                        />
+                        <div class="p-6">
+                            <span class="text-sm text-secondary"
+                                >Content Strategy</span
+                            >
+                            <h3 class="text-xl font-semibold mt-2">
+                                E-commerce Website Rewrite
+                            </h3>
+                            <p class="text-gray-600 mt-2">
+                                Complete content overhaul for a leading
+                                e-commerce platform, resulting in 200% increase
+                                in conversions.
+                            </p>
+                            <button
+                                class="mt-4 text-secondary hover:text-secondary/80 cursor-pointer"
+                            >
+                                View Case Study →
+                            </button>
+                        </div>
+                    </div>
+                    <div
+                        class="bg-gray-900 rounded-xl overflow-hidden shadow-sm hover:shadow-md transition-shadow"
+                    >
+                        <img
+                            src="https://public.readdy.ai/ai/img_res/92e7708982935aafb6972c1b588344c4.jpg"
+                            class="w-full h-48 object-cover"
+                            alt="Project 2"
+                        />
+                        <div class="p-6">
+                            <span class="text-sm text-secondary"
+                                >Blog Writing</span
+                            >
+                            <h3 class="text-xl font-semibold mt-2">
+                                Tech Blog Series
+                            </h3>
+                            <p class="text-gray-600 mt-2">
+                                Series of technical blog posts for a SaaS
+                                company, driving 50K+ monthly visitors.
+                            </p>
+                            <button
+                                class="mt-4 text-secondary hover:text-secondary/80 cursor-pointer"
+                            >
+                                View Case Study →
+                            </button>
+                        </div>
+                    </div>
+                    <div
+                        class="bg-gray-900 rounded-xl overflow-hidden shadow-sm hover:shadow-md transition-shadow"
+                    >
+                        <img
+                            src="https://public.readdy.ai/ai/img_res/98d2ed4dae8a11e1b49cc6e91c00a473.jpg"
+                            class="w-full h-48 object-cover"
+                            alt="Project 3"
+                        />
+                        <div class="p-6">
+                            <span class="text-sm text-secondary"
+                                >Social Media</span
+                            >
+                            <h3 class="text-xl font-semibold mt-2">
+                                Social Media Campaign
+                            </h3>
+                            <p class="text-gray-600 mt-2">
+                                Comprehensive social media content strategy
+                                reaching over 1M impressions.
+                            </p>
+                            <button
+                                class="mt-4 text-secondary hover:text-secondary/80 cursor-pointer"
+                            >
+                                View Case Study →
+                            </button>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </section>
+        <section id="contact" class="py-24">
+            <div class="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
+                <h2 class="text-4xl font-bold text-center mb-16">
+                    Get in Touch
+                </h2>
+                <div class="grid grid-cols-1 lg:grid-cols-2 gap-12">
+                    <div>
+                        <form class="space-y-6">
+                            <div>
+                                <label
+                                    class="block text-sm font-medium text-gray-300 mb-2"
+                                    >Name</label
+                                >
+                                <input
+                                    type="text"
+                                    class="w-full px-4 py-2 border border-gray-700 bg-gray-800 text-gray-100 rounded focus:outline-none focus:ring-2 focus:ring-secondary/20 focus:border-secondary"
+                                    required
+                                />
+                            </div>
+                            <div>
+                                <label
+                                    class="block text-sm font-medium text-gray-300 mb-2"
+                                    >Email</label
+                                >
+                                <input
+                                    type="email"
+                                    class="w-full px-4 py-2 border border-gray-700 bg-gray-800 text-gray-100 rounded focus:outline-none focus:ring-2 focus:ring-secondary/20 focus:border-secondary"
+                                    required
+                                />
+                            </div>
+                            <div>
+                                <label
+                                    class="block text-sm font-medium text-gray-300 mb-2"
+                                    >Message</label
+                                >
+                                <textarea
+                                    rows="4"
+                                    class="w-full px-4 py-2 border border-gray-700 bg-gray-800 text-gray-100 rounded focus:outline-none focus:ring-2 focus:ring-secondary/20 focus:border-secondary"
+                                    required
+                                ></textarea>
+                            </div>
+                            <button
+                                type="submit"
+                                class="w-full bg-secondary text-white px-6 py-3 !rounded-button hover:bg-secondary/90 cursor-pointer whitespace-nowrap"
+                            >
+                                Send Message
+                            </button>
+                        </form>
+                    </div>
+                    <!-- ✅ Notification Pop-up (Hidden Initially) -->
+                    <div
+                        id="notification"
+                        class="hidden fixed bottom-4 right-4 bg-green-500 text-white px-6 py-3 rounded shadow-lg"
+                    >
+                        ✅ Message sent successfully!
+                    </div>
+                    <!--<script src="script.js"></script> <!-- External JavaScript File -->
+
+                    <div class="space-y-8">
+                        <div>
+                            <h3 class="text-xl font-semibold mb-4">
+                                Contact Information
+                            </h3>
+                            <div class="space-y-4">
+                                <div class="flex items-center space-x-4">
+                                    <div
+                                        class="w-10 h-10 flex items-center justify-center bg-secondary/10 rounded-lg"
+                                    >
+                                        <i
+                                            class="ri-mail-line text-secondary"
+                                        ></i>
+                                    </div>
+                                    <span class="text-gray-600"
+                                        >ezrasanga013@gmail.com</span
+                                    >
+                                </div>
+                                <div class="flex items-center space-x-4">
+                                    <div
+                                        class="w-10 h-10 flex items-center justify-center bg-secondary/10 rounded-lg"
+                                    >
+                                        <i
+                                            class="ri-phone-line text-secondary"
+                                        ></i>
+                                    </div>
+                                    <span class="text-gray-600"
+                                        >+254 (742) 867-810</span
+                                    >
+                                </div>
+                                <div class="flex items-center space-x-4">
+                                    <div
+                                        class="w-10 h-10 flex items-center justify-center bg-secondary/10 rounded-lg"
+                                    >
+                                        <i
+                                            class="ri-map-pin-line text-secondary"
+                                        ></i>
+                                    </div>
+                                    <span class="text-gray-600"
+                                        >Nairobi, Kenya</span
+                                    >
+                                </div>
+                            </div>
+                        </div>
+                        <div>
+                            <h3 class="text-xl font-semibold mb-4">
+                                Follow Me
+                            </h3>
+                            <div class="flex space-x-4">
+                                <a
+                                    href="#"
+                                    class="w-10 h-10 flex items-center justify-center bg-secondary/10 rounded-lg hover:bg-secondary/20 cursor-pointer"
+                                >
+                                    <i
+                                        class="ri-linkedin-line text-secondary"
+                                    ></i>
+                                </a>
+                                <a
+                                    href="#"
+                                    class="w-10 h-10 flex items-center justify-center bg-secondary/10 rounded-lg hover:bg-secondary/20 cursor-pointer"
+                                >
+                                    <i
+                                        class="ri-twitter-line text-secondary"
+                                    ></i>
+                                </a>
+                                <a
+                                    href="#"
+                                    class="w-10 h-10 flex items-center justify-center bg-secondary/10 rounded-lg hover:bg-secondary/20 cursor-pointer"
+                                >
+                                    <i
+                                        class="ri-medium-line text-secondary"
+                                    ></i>
+                                </a>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </section>
+
+        <footer class="bg-gray-800 py-12">
+            <div class="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
+                <div
+                    class="flex flex-col md:flex-row justify-between items-center"
+                >
+                    <span class="text-2xl font-['Pacifico'] mb-4 md:mb-0"
+                        >𝐄𝐳𝐫𝐚 𝐊𝐢𝐩𝐥𝐢𝐦𝐨 ʕʘ̅͜ʘ̅ʔ</span
+                    >
+                    <div class="flex space-x-8">
+                        <a
+                            href="/#home"
+                            class="text-gray-400 hover:text-secondary cursor-pointer"
+                            >Home</a
+                        >
+                        <a
+                            href="/#skills"
+                            class="text-gray-600 hover:text-secondary cursor-pointer"
+                            >Skills</a
+                        >
+                        <a
+                            href="/#experience"
+                            class="text-gray-600 hover:text-secondary cursor-pointer"
+                            >Experience</a
+                        >
+                        <a
+                            href="/Gedion2/projects.html"
+                            class="text-gray-600 hover:text-secondary cursor-pointer"
+                            >Projects</a
+                        >
+                        <a
+                            href="/#contact"
+                            class="text-gray-600 hover:text-secondary cursor-pointer"
+                            >Contact</a
+                        >
+                    </div>
+                </div>
+                <div class="mt-8 text-center text-gray-600">
+                    <p class="text-gray-400">
+                        © 2025 Ezra Kiplimo. All rights reserved.
+                    </p>
+                </div>
+            </div>
+        </footer>
+        <script>
+            function scrollToContact() {
+            const contactSection = document.getElementById('contact');
+            contactSection.scrollIntoView({ behavior: 'smooth' });
+            setTimeout(() => {
+            const firstInput = document.querySelector('#contact form input:first-of-type');
+            firstInput.focus();
+            }, 800);
+            }
+            document.addEventListener('DOMContentLoaded', function() {
+            const themeToggleBtn = document.getElementById('theme-toggle');
+            const lightIcon = document.getElementById('theme-toggle-light-icon');
+            const darkIcon = document.getElementById('theme-toggle-dark-icon');
+            function toggleTheme() {
+            if (document.documentElement.classList.contains('light')) {
+            document.documentElement.classList.remove('light');
+            document.documentElement.classList.add('dark');
+            lightIcon.classList.add('hidden');
+            darkIcon.classList.remove('hidden');
+            } else {
+            document.documentElement.classList.remove('dark');
+            document.documentElement.classList.add('light');
+            lightIcon.classList.remove('hidden');
+            darkIcon.classList.add('hidden');
+            }
+            }
+            themeToggleBtn.addEventListener('click', toggleTheme);
+            const form = document.querySelector('form');
+            form.addEventListener('submit', function(e) {
+            e.preventDefault();
+            const formData = new FormData(form);
+            const data = Object.fromEntries(formData);
+            console.log('Form submitted:', data);
+            form.reset();
+            const notification = document.createElement('div');
+            notification.className = 'fixed bottom-4 right-4 bg-green-500 text-white px-6 py-3 rounded shadow-lg';
+            notification.textContent = 'Message sent successfully!';
+            document.body.appendChild(notification);
+            setTimeout(() => {
+            notification.remove();
+            }, 3000);
+            });
+            });
+
+
+            document.addEventListener('DOMContentLoaded', function () {
+                const form = document.querySelector('form');
+                if (!form) {
+                    console.error("Form not found");
+                    return;
+                }
+
+                form.addEventListener('submit', function (e) {
+                    e.preventDefault();
+
+                    const formData = new FormData(form);
+                    const data = Object.fromEntries(formData);
+                    console.log("Form submitted:", data);
+
+                    form.reset();
+
+                    // Show notification
+                    const notification = document.getElementById('notification');
+                    notification.style.display = 'block';
+                    setTimeout(() => {
+                        notification.style.opacity = '1';
+                        notification.style.transform = 'translateY(0)';
+                    }, 100); // Small delay for animation effect
+
+                    // Hide notification after 3 seconds
+                    setTimeout(() => {
+                        notification.style.opacity = '0';
+                        notification.style.transform = 'translateY(20px)';
+                        setTimeout(() => {
+                            notification.style.display = 'none';
+                        }, 300); // Wait for fade-out animation
+                    }, 3000);
+                });
+            });
+        </script>
+        <script>
+            var typed = new Typed("#typed-text", {
+              strings: [
+                "Professional Content Writer",
+                "Creative Storyteller",
+                "SEO-Optimized Copywriter",
+                "Scriptwriter for Films & Ads",
+                "Academic and Research writing",
+                "Freelance Blogger & Editor"
+              ],
+              typeSpeed: 70, // Speed of typing
+              backSpeed: 50, // Speed of deleting
+              backDelay: 1500, // Delay before deleting
+              startDelay: 500, // Delay before starting
+              loop: true, // Infinite loop
+              showCursor: true,
+              cursorChar: "🖊️",
+            });
+        </script>
+        <button
+            id="backToTop"
+            class="fixed bottom-8 right-8 bg-secondary text-white px-4 py-3 rounded-full shadow-lg hover:bg-secondary/90 cursor-pointer hidden"
+        >
+            ↑
+        </button>
+
+        <script>
+            document.addEventListener("DOMContentLoaded", function () {
+                const backToTopBtn = document.getElementById("backToTop");
+
+                window.addEventListener("scroll", function () {
+                    if (window.scrollY > 300) { // Show when scrolling down
+                        backToTopBtn.classList.add("show");
+                    } else {
+                        backToTopBtn.classList.remove("show");
+                    }
+                });
+
+                backToTopBtn.addEventListener("click", function () {
+                    window.scrollTo({
+                        top: 0,
+                        behavior: "smooth"
+                    });
+                });
+            });
+        </script> 
+    </body>
+</html>
+file:///C:/Users/Hp/Downloads/Gedion2/Gedion2/projects.html
+file:///C:/Users/Hp/Downloads/Gedion2/Gedion2/index.html#home

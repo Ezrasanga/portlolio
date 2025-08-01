@@ -1,0 +1,430 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Ezra Kiplimo - Portfolio Projects</title>
+    <script src="https://cdn.tailwindcss.com"></script>
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Inter:wght@400;500;600&family=Poppins:wght@500;600;700&display=swap" rel="stylesheet">
+    <link href="https://cdn.jsdelivr.net/npm/remixicon@4.5.0/fonts/remixicon.css" rel="stylesheet">
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/echarts/5.5.0/echarts.min.js"></script>
+    <script>
+        tailwind.config = {
+            theme: {
+                extend: {
+                    colors: {
+                        primary: '#23163F',
+                        secondary: '#57B5E7'
+                    },
+                    borderRadius: {
+                        'none': '0px',
+                        'sm': '4px',
+                        DEFAULT: '8px',
+                        'md': '12px',
+                        'lg': '16px',
+                        'xl': '20px',
+                        '2xl': '24px',
+                        '3xl': '32px',
+                        'full': '9999px',
+                        'button': '8px'
+                    }
+                }
+            }
+        }
+    </script>
+    <style>
+        :where([class^="ri-"])::before {
+            content: "\f3c2";
+        }
+
+        body {
+            font-family: 'Inter', sans-serif;
+        }
+
+        h1,
+        h2,
+        h3,
+        h4,
+        h5,
+        h6 {
+            font-family: 'Poppins', sans-serif;
+        }
+
+        .project-card {
+            transition: transform 0.3s ease;
+        }
+
+        .project-card:hover {
+            transform: translateY(-4px);
+        }
+    </style>
+</head>
+
+<body class="bg-gray-900 text-gray-100 dark">
+    <nav class="fixed top-0 w-full bg-gray-900/95 backdrop-blur-sm z-50 border-b border-gray-800">
+        <div class="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
+            <div class="flex justify-between h-16">
+                <div class="flex items-center">
+                    <span class="text-2xl font-['Pacifico']">Ezra Kiplimo ʕʘ̅͜ʘ̅ʔ</span>
+                </div>
+                <div class="hidden md:flex items-center space-x-8">
+                    <a href="index.html#home" class="text-gray-300 hover:text-secondary cursor-pointer">Home</a>
+                    <a href="index.html#skills" class="text-gray-300 hover:text-secondary cursor-pointer">Skills</a>
+                    <a href="index.html#experience" class="text-gray-300 hover:text-secondary cursor-pointer">Experience</a>
+                    <a href="projects.html" class="text-secondary cursor-pointer">Projects</a>
+                    <a href="index.html#contact" class="text-gray-300 hover:text-secondary cursor-pointer">Contact</a>
+                    <a href="https://drive.google.com/uc?export=download&id=1btRsnGu19k8OUP7kWsZ5dmoP4r0BntLH"
+                       download="Ezra_Kiplimo_Resume.pdf"
+                       class="bg-secondary text-white px-6 py-2 rounded-button hover:bg-secondary/90 cursor-pointer whitespace-nowrap">
+                        Download CV
+                    </a>
+                </div>
+            </div>
+        </div>
+    </nav>
+    <div class="pt-24 pb-12 bg-gray-900">
+        <div class="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
+            <div class="text-center">
+                <h1 class="text-4xl font-bold mb-4">Portfolio Projects</h1>
+                <p class="text-xl text-gray-400 max-w-2xl mx-auto">Explore my diverse collection of writing projects, from content strategy to creative storytelling.</p>
+            </div>
+            <div class="mt-12">
+                <div class="flex justify-center space-x-4 mb-12">
+                    <button class="px-6 py-2 bg-secondary text-white !rounded-full hover:bg-secondary/90 cursor-pointer whitespace-nowrap" id="all-filter">All Projects</button>
+                    <button class="px-6 py-2 bg-gray-800 text-gray-300 !rounded-full hover:bg-gray-700 cursor-pointer whitespace-nowrap" id="content-filter">Content Strategy</button>
+                    <button class="px-6 py-2 bg-gray-800 text-gray-300 !rounded-full hover:bg-gray-700 cursor-pointer whitespace-nowrap" id="blog-filter">Blog Writing</button>
+                    <button class="px-6 py-2 bg-gray-800 text-gray-300 !rounded-full hover:bg-gray-700 cursor-pointer whitespace-nowrap" id="social-filter">Social Media</button>
+                </div>
+                <div class="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-3 gap-8" id="project-grid">
+                    <div class="project-card bg-gray-800 rounded-xl overflow-hidden shadow-lg" data-category="content">
+                        <img src="https://public.readdy.ai/ai/img_res/ee6ff2978ba2e054a941ffb641fbba82.jpg" class="w-full h-48 object-cover" alt="E-commerce Website Rewrite">
+                        <div class="p-6">
+                            <span class="text-sm text-secondary">Content Strategy</span>
+                            <h3 class="text-xl font-semibold mt-2">E-commerce Website Rewrite</h3>
+                            <p class="text-gray-400 mt-2">Complete content overhaul resulting in 200% increase in conversions and 150% boost in organic traffic.</p>
+                            <div class="mt-4 flex justify-between items-center">
+                                <div class="flex space-x-2">
+                                    <span class="px-3 py-1 bg-gray-700 text-gray-300 rounded-full text-sm">SEO</span>
+                                    <span class="px-3 py-1 bg-gray-700 text-gray-300 rounded-full text-sm">UX Writing</span>
+                                </div>
+                                <button class="text-secondary hover:text-secondary/80 cursor-pointer" onclick="showProjectDetails('ecommerce')">View Details →</button>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="project-card bg-gray-800 rounded-xl overflow-hidden shadow-lg" data-category="blog">
+                        <img src="https://public.readdy.ai/ai/img_res/3c446cba5824a3b725338c7e892297eb.jpg" class="w-full h-48 object-cover" alt="Tech Blog Series">
+                        <div class="p-6">
+                            <span class="text-sm text-secondary">Blog Writing</span>
+                            <h3 class="text-xl font-semibold mt-2">Tech Industry Blog Series</h3>
+                            <p class="text-gray-400 mt-2">Series of technical blog posts driving 50K+ monthly visitors and 25% increase in lead generation.</p>
+                            <div class="mt-4 flex justify-between items-center">
+                                <div class="flex space-x-2">
+                                    <span class="px-3 py-1 bg-gray-700 text-gray-300 rounded-full text-sm">Technical</span>
+                                    <span class="px-3 py-1 bg-gray-700 text-gray-300 rounded-full text-sm">B2B</span>
+                                </div>
+                                <button class="text-secondary hover:text-secondary/80 cursor-pointer" onclick="showProjectDetails('tech-blog')">View Details →</button>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="project-card bg-gray-800 rounded-xl overflow-hidden shadow-lg" data-category="social">
+                        <img src="https://public.readdy.ai/ai/img_res/87d95ee78fa6681b49fdd061ba89c15e.jpg" class="w-full h-48 object-cover" alt="Social Media Campaign">
+                        <div class="p-6">
+                            <span class="text-sm text-secondary">Social Media</span>
+                            <h3 class="text-xl font-semibold mt-2">Brand Launch Campaign</h3>
+                            <p class="text-gray-400 mt-2">Multi-platform social media strategy reaching 1M+ impressions and 85% engagement rate.</p>
+                            <div class="mt-4 flex justify-between items-center">
+                                <div class="flex space-x-2">
+                                    <span class="px-3 py-1 bg-gray-700 text-gray-300 rounded-full text-sm">Strategy</span>
+                                    <span class="px-3 py-1 bg-gray-700 text-gray-300 rounded-full text-sm">Growth</span>
+                                </div>
+                                <button class="text-secondary hover:text-secondary/80 cursor-pointer" onclick="showProjectDetails('social-campaign')">View Details →</button>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+                <div class="mt-16">
+                    <h2 class="text-3xl font-bold mb-8">Project Metrics</h2>
+                    <div class="grid grid-cols-1 lg:grid-cols-2 gap-8">
+                        <div class="bg-gray-800 p-6 rounded-xl">
+                            <h3 class="text-xl font-semibold mb-4">Performance Overview</h3>
+                            <div id="performanceChart" class="w-full h-80"></div>
+                        </div>
+                        <div class="bg-gray-800 p-6 rounded-xl">
+                            <h3 class="text-xl font-semibold mb-4">Client Satisfaction</h3>
+                            <div id="satisfactionChart" class="w-full h-80"></div>
+                        </div>
+                    </div>
+                </div>
+                <div class="mt-16">
+                    <h2 class="text-3xl font-bold mb-8">Client Testimonials</h2>
+                    <div class="grid grid-cols-1 md:grid-cols-2 gap-8">
+                        <div class="bg-gray-800 p-6 rounded-xl">
+                            <div class="flex items-center mb-4">
+                                <img src="https://public.readdy.ai/ai/img_res/18a09dfca3d6262fa78e1b412733f481.jpg" class="w-12 h-12 rounded-full mr-4" alt="Client">
+                                <div>
+                                    <h4 class="font-semibold">Emily Thompson</h4>
+                                    <p class="text-secondary">Marketing Director, TechCorp</p>
+                                </div>
+                            </div>
+                            <p class="text-gray-400">"Ezra's content strategy transformed our online presence. The results exceeded our expectations with a significant increase in user engagement and conversions."</p>
+                        </div>
+                        <div class="bg-gray-800 p-6 rounded-xl">
+                            <div class="flex items-center mb-4">
+                                <img src="https://public.readdy.ai/ai/img_res/5525391597f067678685da6cce7ebbbb.jpg" class="w-12 h-12 rounded-full mr-4" alt="Client">
+                                <div>
+                                    <h4 class="font-semibold">David Kim</h4>
+                                    <p class="text-secondary">Product Manager, NexaTech</p>
+                                </div>
+                            </div>
+                            <p class="text-gray-400">"Ezra’s writing made a huge difference in our engagement. He has a talent for making complex ideas accessible and compelling."</p>
+                        </div>
+                        <div class="bg-gray-800 p-6 rounded-xl">
+                            <div class="flex items-center mb-4">
+                                <img src="https://public.readdy.ai/ai/img_res/5525391597f067678685da6cce7ebbbb.jpg" class="w-12 h-12 rounded-full mr-4" alt="Client">
+                                <div>
+                                    <h4 class="font-semibold">Michael Chen</h4>
+                                    <p class="text-secondary">CEO, StartupX</p>
+                                </div>
+                            </div>
+                            <p class="text-gray-400">"Working with Ezra on our blog series was a game-changer. Her technical writing skills and SEO expertise drove remarkable results."</p>
+                        </div>
+                        <div class="bg-gray-800 p-6 rounded-xl">
+                            <div class="flex items-center mb-4">
+                                <img src="https://public.readdy.ai/ai/img_res/5525391597f067678685da6cce7ebbbb.jpg" class="w-12 h-12 rounded-full mr-4" alt="Client">
+                                <div>
+                                    <h4 class="font-semibold">Olivia White</h4>
+                                    <p class="text-secondary">CEO, BrandSphere</p>
+                                </div>
+                            </div>
+                            <p class="text-gray-400">"Ezra helped us rank higher on search engines with his well-researched and engaging content. He’s a true professional!"</p>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+        <div id="project-modal" class="fixed inset-0 bg-black/50 hidden z-50">
+            <div class="flex items-center justify-center min-h-screen p-4">
+                <div class="bg-gray-800 rounded-xl max-w-4xl w-full max-h-[90vh] overflow-y-auto">
+                    <div class="p-6">
+                        <div class="flex justify-between items-center mb-6">
+                            <h2 class="text-2xl font-bold" id="modal-title"></h2>
+                            <button onclick="closeProjectDetails()" class="text-gray-400 hover:text-gray-300">
+                                <i class="ri-close-line text-2xl"></i>
+                            </button>
+                        </div>
+                        <div id="modal-content"></div>
+                    </div>
+                </div>
+            </div>
+        </div>
+        <script>
+            document.addEventListener('DOMContentLoaded', function() {
+                const performanceChart = echarts.init(document.getElementById('performanceChart'));
+                const satisfactionChart = echarts.init(document.getElementById('satisfactionChart'));
+                const performanceOption = {
+                    animation: false,
+                    tooltip: {
+                        trigger: 'axis',
+                        backgroundColor: 'rgba(255, 255, 255, 0.9)',
+                        textStyle: {
+                            color: '#1f2937'
+                        }
+                    },
+                    xAxis: {
+                        type: 'category',
+                        data: ['Jan', 'Feb', 'Mar', 'Apr', 'May', 'Jun'],
+                        axisLabel: {
+                            color: '#9ca3af'
+                        }
+                    },
+                    yAxis: {
+                        type: 'value',
+                        axisLabel: {
+                            color: '#9ca3af'
+                        }
+                    },
+                    series: [{
+                        name: 'Traffic',
+                        type: 'line',
+                        smooth: true,
+                        data: [1200, 2100, 1900, 2800, 3100, 3800],
+                        color: 'rgba(87, 181, 231, 1)',
+                        areaStyle: {
+                            color: new echarts.graphic.LinearGradient(0, 0, 0, 1, [{
+                                offset: 0,
+                                color: 'rgba(87, 181, 231, 0.1)'
+                            }, {
+                                offset: 1,
+                                color: 'rgba(87, 181, 231, 0)'
+                            }])
+                        }
+                    }]
+                };
+                const satisfactionOption = {
+                    animation: false,
+                    tooltip: {
+                        trigger: 'item',
+                        backgroundColor: 'rgba(255, 255, 255, 0.9)',
+                        textStyle: {
+                            color: '#1f2937'
+                        }
+                    },
+                    series: [{
+                        type: 'pie',
+                        radius: ['40%', '70%'],
+                        data: [{
+                            value: 75,
+                            name: 'Very Satisfied'
+                        }, {
+                            value: 20,
+                            name: 'Satisfied'
+                        }, {
+                            value: 5,
+                            name: 'Neutral'
+                        }],
+                        color: ['rgba(87, 181, 231, 1)', 'rgba(141, 211, 199, 1)', 'rgba(251, 191, 114, 1)']
+                    }]
+                };
+                performanceChart.setOption(performanceOption);
+                satisfactionChart.setOption(satisfactionOption);
+                window.addEventListener('resize', function() {
+                    performanceChart.resize();
+                    satisfactionChart.resize();
+                });
+                const filterButtons = document.querySelectorAll('[id$="-filter"]');
+                const projectCards = document.querySelectorAll('.project-card');
+                filterButtons.forEach(button => {
+                    button.addEventListener('click', function() {
+                        const category = this.id.replace('-filter', '');
+                        filterButtons.forEach(btn => btn.classList.remove('bg-secondary', 'text-white'));
+                        filterButtons.forEach(btn => btn.classList.add('bg-gray-800', 'text-gray-300'));
+                        this.classList.remove('bg-gray-800', 'text-gray-300');
+                        this.classList.add('bg-secondary', 'text-white');
+                        projectCards.forEach(card => {
+                            if (category === 'all' || card.dataset.category === category) {
+                                card.style.display = 'block';
+                            } else {
+                                card.style.display = 'none';
+                            }
+                        });
+                    });
+                });
+            });
+
+            function showProjectDetails(projectId) {
+                const modal = document.getElementById('project-modal');
+                const modalTitle = document.getElementById('modal-title');
+                const modalContent = document.getElementById('modal-content');
+                const projectDetails = {
+                    'ecommerce': {
+                        title: 'E-commerce Website Rewrite',
+                        content: `
+<div class="space-y-6">
+<img src="e-commerce-details.jpg" class="w-full rounded-xl" alt="Project Details">
+<div class="grid grid-cols-2 gap-4 mb-6">
+<div class="bg-gray-700 p-4 rounded-xl">
+<h4 class="font-semibold mb-2">Before</h4>
+<p class="text-gray-400">Generic product descriptions, poor navigation, low engagement</p>
+</div>
+<div class="bg-gray-700 p-4 rounded-xl">
+<h4 class="font-semibold mb-2">After</h4>
+<p class="text-gray-400">Compelling copy, clear structure, increased conversions</p>
+</div>
+</div>
+<div class="space-y-4">
+<h3 class="text-xl font-semibold">Project Overview</h3>
+<p class="text-gray-400">Complete content overhaul for an e-commerce platform selling premium lifestyle products. The project involved rewriting product descriptions, category pages, and key landing pages.</p>
+<h3 class="text-xl font-semibold">Key Results</h3>
+<ul class="list-disc list-inside text-gray-400 space-y-2">
+<li>200% increase in conversion rate</li>
+<li>150% boost in organic traffic</li>
+<li>45% reduction in bounce rate</li>
+<li>85% improvement in time on site</li>
+</ul>
+</div>
+</div>`
+                    },
+                    'tech-blog': {
+                        title: 'Tech Industry Blog Series',
+                        content: `
+<div class="space-y-6">
+<img src="https://public.readdy.ai/ai/img_res/334a44185680a917f59376c7620dc324.jpg" class="w-full rounded-xl" alt="Project Details">
+<div class="space-y-4">
+<h3 class="text-xl font-semibold">Project Overview</h3>
+<p class="text-gray-400">Created a comprehensive series of technical blog posts targeting enterprise software developers and IT decision-makers.</p>
+<h3 class="text-xl font-semibold">Content Strategy</h3>
+<ul class="list-disc list-inside text-gray-400 space-y-2">
+<li>In-depth technical tutorials</li>
+<li>Industry trend analysis</li>
+<li>Case studies and success stories</li>
+<li>Best practices and guides</li>
+</ul>
+<h3 class="text-xl font-semibold">Results</h3>
+<ul class="list-disc list-inside text-gray-400 space-y-2">
+<li>50K+ monthly visitors</li>
+<li>25% increase in lead generation</li>
+<li>35% improvement in newsletter signups</li>
+<li>Featured in major tech publications</li>
+</ul>
+</div>
+</div>`
+                    },
+                    'social-campaign': {
+                        title: 'Brand Launch Campaign',
+                        content: `
+<div class="space-y-6">
+<img src="brand-launch.jpg" class="w-full rounded-xl" alt="Project Details">
+<div class="space-y-4">
+<h3 class="text-xl font-semibold">Campaign Overview</h3>
+<p class="text-gray-400">Developed and executed a multi-platform social media strategy for a new brand launch in the wellness industry.</p>
+<h3 class="text-xl font-semibold">Strategy Components</h3>
+<ul class="list-disc list-inside text-gray-400 space-y-2">
+<li>Platform-specific content calendars</li>
+<li>Influencer partnerships</li>
+<li>User-generated content campaigns</li>
+<li>Paid social media advertising</li>
+</ul>
+<h3 class="text-xl font-semibold">Campaign Results</h3>
+<ul class="list-disc list-inside text-gray-400 space-y-2">
+<li>1M+ impressions across platforms</li>
+<li>85% engagement rate</li>
+<li>40K+ new followers</li>
+<li>250% increase in brand mentions</li>
+</ul>
+</div>
+</div>`
+                    }
+                };
+                modalTitle.textContent = projectDetails[projectId].title;
+                modalContent.innerHTML = projectDetails[projectId].content;
+                modal.classList.remove('hidden');
+            }
+
+            function closeProjectDetails() {
+                document.getElementById('project-modal').classList.add('hidden');
+            }
+        </script>
+        <!--<footer class="bg-gray-800 py-12">-->
+        <footer class="bg-gray-800 py-12 mt-16">
+            <div class="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
+                <div class="flex flex-col md:flex-row justify-between items-center">
+                    <span class="text-2xl font-['Pacifico'] mb-4 md:mb-0">Ezra Kiplimo ʕʘ̅͜ʘ̅ʔ</span>
+                    <div class="flex space-x-8">
+                        <a href="index.html#home" class="text-gray-400 hover:text-secondary cursor-pointer">Home</a>
+                        <a href="index.html#skills" class="text-gray-600 hover:text-secondary cursor-pointer">Skills</a>
+                        <a href="index.html#experience" class="text-gray-600 hover:text-secondary cursor-pointer">Experience</a>
+                        <a href="projects.html" class="text-secondary cursor-pointer">Projects</a>
+                        <a href="index.html#contact" class="text-gray-600 hover:text-secondary cursor-pointer">Contact</a>
+                    </div>
+                </div>
+                <div class="mt-8 text-center text-gray-600">
+                    <p class="text-gray-400">© 2025 Ezra Kiplimo. All rights reserved.</p>
+                </div>
+            </div>
+        </footer>
+</body>
+
+</html>
